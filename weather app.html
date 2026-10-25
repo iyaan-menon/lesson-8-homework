@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Weather App Homepage</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            
+            background-image: radial-gradient(circle, rgb(255, 255, 255) 2px, transparent 3px);
+            background-size: 40px 40px;
+            background-repeat: repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            color: black;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: brown;
+        }
+
+        .subtitle {
+            font-size: 18px;
+        }
+
+        .weather-card {
+            width: 400px;
+            border: 3px solid white;
+            border-radius: 20px;
+            background-image: linear-gradient(to bottom right, #fff81e, #e9fa87);
+        }
+
+        .weather-icon {
+            font-size: 70px;
+            animation: floatCloud 3s infinite alternate;
+        }
+
+        #temperature {
+            font-size: 48px;
+            font-weight: bold;
+            color: #fffacd;
+        }
+
+        .details {
+            font-size: 18px;
+            color: white;
+        }
+
+        .forecast-section {
+            width: 600px;
+            border: 3px solid white;
+            border-radius: 15px;
+            background-image: radial-gradient(circle, white, #e0e6ad);
+            color: #663d00;
+        }
+
+        .forecast-title {
+            color: #662700;
+        }
+
+        h2,
+        h3 {
+            color: white;
+        }
+
+        
+        @keyframes floatCloud {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Weather App Homepage</h1>
+
+    <p class="subtitle">
+        Check today's weather and plan your day better.
+    </p>
+
+    <div class="weather-card">
+        <h2>Today's Weather</h2>
+
+        <div class="weather-icon">Sunny</div>
+
+        <p id="temperature">28°C</p>
+
+        <p class="details">City: Melbourne</p>
+        <p class="details">Condition: Sunny</p>
+        <p class="details">Humidity: 52%</p>
+        <p class="details">Wind Speed: 21 km/h</p>
+    </div>
+
+    <h2>Weekly Forecast</h2>
+
+    <div class="forecast-section">
+        <h3 class="forecast-title">Next 5 Days</h3>
+
+        <p class="day">Monday: 24C</p>
+        <p class="day">Tuesday: 19C</p>
+        <p class="day">Wednesday: 21C</p>
+        <p class="day">Thursday: 22°C</p>
+        <p class="day">Friday: 17°C</p>
+    </div>
+
+</body>
+
+</html>
